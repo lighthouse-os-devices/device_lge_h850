@@ -18,8 +18,8 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lighthouse/config/common_full_phone.mk)
+# Inherit some common Lighthouse stuff.
+$(call inherit-product, vendor/lighthouse/config/common.mk)
 
 # Inherit from h815 device
 $(call inherit-product, device/lge/h850/device.mk)
@@ -39,5 +39,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 BUILD_FINGERPRINT := "lge/h1_global_com/h1:8.0.0/OPR1.170623.032/190380127377a:user/release-keys"
 
-WITH_GAPPS := true
+
 LIGHTHOUSE_BUILD_TYPE=OFFICIAL
